@@ -1,0 +1,88 @@
+
+[1m   tasks/functions.js[22m
+     15 |[90m    wpContentSync,[39m
+                          ^ Expected ':' and instead saw ','.
+     17 |[90m    getAxiosInstance,[39m
+                             ^ Expected ':' and instead saw ','.
+     20 |[90m};[39m
+         ^ Expected ':' and instead saw '}'.
+     20 |[90m};[39m
+          ^ Expected an identifier and instead saw ';'.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+         ^ Expected '}' to match '{' from line 14 and instead saw 'function'.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                 ^ Missing semicolon.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                                                               ^ Missing semicolon.
+     32 |[90m    let promise = connection.get(`${restRoute}/${postType}/${postId}?context=edit`).then(function(resp) {[39m
+                                          ^ Unexpected '`'.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                 ^ Expected an identifier and instead saw 'let'.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                     ^ Expected ')' and instead saw 'content'.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                             ^ Bad assignment.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                              ^ Missing semicolon.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                                                 ^ Expected an assignment or function call and instead saw an expression.
+     46 |[90m    }).catch(function(error) {[39m
+              ^ Expected an identifier and instead saw ')'.
+     46 |[90m    }).catch(function(error) {[39m
+               ^ Expected an operator and instead saw '.'.
+     46 |[90m    }).catch(function(error) {[39m
+               ^ Expected an assignment or function call and instead saw an expression.
+     46 |[90m    }).catch(function(error) {[39m
+                ^ Missing semicolon.
+     46 |[90m    }).catch(function(error) {[39m
+                ^ Expected an identifier and instead saw 'catch'.
+     46 |[90m    }).catch(function(error) {[39m
+                     ^ Expected an operator and instead saw '('.
+     46 |[90m    }).catch(function(error) {[39m
+                     ^ Expected an assignment or function call and instead saw an expression.
+     46 |[90m    }).catch(function(error) {[39m
+                      ^ Missing semicolon.
+     46 |[90m    }).catch(function(error) {[39m
+                              ^ Missing name in function declaration.
+     48 |[90m        return error[39m
+                             ^ Missing semicolon.
+     49 |[90m    });[39m
+              ^ Expected an identifier and instead saw ')'.
+     49 |[90m    });[39m
+              ^ Expected an assignment or function call and instead saw an expression.
+     52 |[90m}[39m
+         ^ Expected '(end)' and instead saw '}'.
+     16 |[90m    wpContentUpload,[39m
+             ^ 'wpContentUpload' is not defined.
+     18 |[90m    writeInitialFile,[39m
+             ^ 'writeInitialFile' is not defined.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                  ^ 'writeInitialFile' is not defined.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                                   ^ 'connection' is not defined.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                                               ^ 'config' is not defined.
+     24 |[90mfunction writeInitialFile(connection, config, options){[39m
+                                                       ^ 'options' is not defined.
+     26 |[90m    const { overwriteExisting, createBackup} =options;[39m
+                                                       ^ 'options' is not defined.
+     27 |[90m    const {postId, filename} =config;[39m
+                                       ^ 'config' is not defined.
+     29 |[90m    let restRoute = config.restRoute || restRouteDefault;[39m
+                             ^ 'config' is not defined.
+     30 |[90m    let postType = config.postType || postTypeDefault;[39m
+                            ^ 'config' is not defined.
+     32 |[90m    let promise = connection.get(`${restRoute}/${postType}/${postId}?context=edit`).then(function(resp) {[39m
+                           ^ 'connection' is not defined.
+     34 |[90m        let content = resp.data.content.raw;[39m
+                               ^ 'resp' is not defined.
+     37 |[90m            grunt.file.write(filename, content);[39m
+                                                ^ 'content' is not defined.
+     41 |[90m            grunt.file.write(filename + '.bak', content);[39m
+                                                         ^ 'content' is not defined.
+     44 |[90m        return content;[39m
+                        ^ 'content' is not defined.
+     51 |[90m    return promise;[39m
+                    ^ 'promise' is not defined.
+
+[31m>> [39m42 errors in 3 files
